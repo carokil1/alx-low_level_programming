@@ -2,7 +2,7 @@
 
 /**
  * main - prints the alphabet in small letters
- * 
+ *
  * Return: always 0
  */
 
