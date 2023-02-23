@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * jack_bauer - prints time in 24hrs
@@ -6,21 +7,16 @@
  */
 
 void jack_bauer(void)
-{
-	int i;
-	int j;
 
-	for (i = 0 ; i < 24 ; i++)
+{
+	int hour;
+	int minute;
+
+	for (hour = 0; hour < 24; hour++)
 	{
-		for (j = 0 ; j < 60 ; i++)
+		for (minute = 0; minute < 60; minute++)
 		{
-			_putchar(i / 10 + '0');
-			_putchar(i % 10 + '0');
-			_putchar(':');
-			_putchar(j / 10 + '0');
-			_putchar(j % 10 + '0');
-			_putchar('\n');
+			printf("%02d:%02d\n", hour, minute);
 		}
 	}
 }
-
