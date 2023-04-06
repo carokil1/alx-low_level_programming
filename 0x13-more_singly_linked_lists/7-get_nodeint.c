@@ -6,8 +6,10 @@
  * @head: pointer to the first node of the linked list
  * @index: index of the node to return
  *
- * Return: pointer to the nth node of the linked list, or NULL if the node doesn't exist
+ * Return: pointer to the nth node of list
+ *
  */
+
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	unsigned int a;
@@ -22,8 +24,8 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 
 	if (a == index && current_node != NULL)
 	{
-		return current_node;
+		return (current_node);
 	}
 
-	return NULL;
+	return (NULL);
 }
