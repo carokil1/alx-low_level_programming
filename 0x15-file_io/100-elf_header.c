@@ -15,6 +15,13 @@ void print_osabi(unsigned char e_ident[EI_NIDENT]);
 void print_abiversion(unsigned char e_ident[EI_NIDENT]);
 void print_type(Elf64_Half e_type);
 void print_entry(Elf64_Addr e_entry);
+/**
+ * main - Entry point for the program
+ * @argc: The number of arguments passed to the program
+ * @argv: An array of pointers to the arguments passed to the program
+ *
+ * Return: 0 on success, non-zero on failure
+ */
 
 int main(int argc, char **argv)
 {
